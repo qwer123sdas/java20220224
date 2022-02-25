@@ -40,8 +40,8 @@ public class C02increment {
 		System.out.println(i);   // 7
 		
 		
-		int j = i++;  // 7
-		int k = ++i;  // 9
+		int j = i++;  // 7 증가되기 전에 인식을 해버림
+		int k = ++i;  // 9 증가된 후에 인식을 함
 		
 		System.out.println(j);
 		System.out.println(k);
