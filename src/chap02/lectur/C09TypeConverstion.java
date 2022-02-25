@@ -56,7 +56,7 @@ public class C09TypeConverstion {
 		//char -> int
 		//char -> long
 		char c1 ='가';
-		i2 =c1;  // 4byte에 2byte를 넣는 것이므로
+		i2 =c1;  // 4byte에 2byte를 넣는 것이므로 자동 형변환
 		System.out.println(c1);
 		System.out.println(i2);
 		
