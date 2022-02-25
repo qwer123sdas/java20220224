@@ -11,5 +11,9 @@ public class CompereOperatorExample2 {
 		System.out.println(v4==v5);
 		System.out.println((float)v4 == v5);
 		System.out.println((int)(v4*10) == (int)(v5*10));
+		
+
+		System.out.println(3L > 3.0);
+		
 	}
 }
