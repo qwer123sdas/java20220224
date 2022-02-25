@@ -12,5 +12,7 @@ public class Exersize02 {
 		int height = 7;
 		double area = ((double)(lengthTop) + lengthBottom)*height/2;
 		System.out.println(area);
+		
+
 	}
 }
