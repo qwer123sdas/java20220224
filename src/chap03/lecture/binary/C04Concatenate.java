@@ -4,6 +4,7 @@ public class C04Concatenate {
 	public static void main(String[] args) {
 		// +의 피연산자가 하나라도 String이면 연결연산자
 		
+		
 		String s1 = "hello";
 		String s2 = "java";
 		
