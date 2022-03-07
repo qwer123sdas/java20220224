@@ -1,4 +1,4 @@
-package chap99.codingbat;
+package chap99.codingbat.namGungEx;
 
 public class Ex6_10 {
 	public static void main(String[] args) {

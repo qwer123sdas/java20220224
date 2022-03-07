@@ -1,5 +1,5 @@
 package chap99.codingbat;
 
-public class Warmup1 {
+public class abc0011 {
 
 }

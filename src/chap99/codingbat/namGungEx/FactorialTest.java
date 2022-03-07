@@ -1,4 +1,4 @@
-package chap99.codingbat;
+package chap99.codingbat.namGungEx;
 
 public class FactorialTest {
 	public static void main(String[] args) {
