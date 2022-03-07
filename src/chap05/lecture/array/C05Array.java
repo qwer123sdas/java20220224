@@ -5,5 +5,9 @@ public class C05Array {
 		int[] arr1 = {3, 5, 1};
 		int[] arr2 = arr1;
 		
+		arr2[0] = 30;
+		
+		System.out.println(arr1[0]);
+		
 	}
 }
