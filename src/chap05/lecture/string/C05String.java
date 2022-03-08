@@ -12,10 +12,13 @@ public class C05String {
 		System.out.println(s2);
 		
 		
-		// regular expression??????
+		// regular expression(정규식)
+		// 문자의 형태를 표현한 것?
 		String s3 = s1.replaceAll("[0-9]", "*");
 		System.out.println(s3);
 		String s4 = s1.replaceAll("[a-zA-Z]", "*");
 		System.out.println(s4);
+		
+
 	}
 }
