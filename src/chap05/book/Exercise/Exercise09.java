@@ -53,6 +53,8 @@ public class Exercise09 {
 						firstNum = scores[i+1];
 					}
 				}
+				// for(int score : scores){
+				//   firstNum = (score > firstNum) ? score : firstNum;
 				System.out.println("최고점수 : " + firstNum);
 
 				//평균

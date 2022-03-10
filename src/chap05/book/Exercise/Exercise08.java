@@ -12,6 +12,18 @@ public class Exercise08 {
 				sum +=array[i][j];
 			}
 		}
+		/*
+		int cnt =0;
+		for(int[] item : array) {
+			for(int num : item) {
+				sum += num;
+				cnt++;
+			}
+		}
+		avg = sum /cnt;
+		*/
+		
+		
 		
 		avg = sum/10;
 		System.out.println("sum : " + sum);
