@@ -3,6 +3,8 @@ package chap99.codingbat.namGungEx;
 import java.awt.Frame;
 import java.awt.Graphics;
 
+import chap99.codingbat.namGungEx.chap07.Point;
+
 class DrawShape extends Frame{
 	public static void main(String[] args) {
 	DrawShape win = new DrawShape("도형그리기"); // 인스턴스 + 생성자 호출
