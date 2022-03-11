@@ -19,7 +19,6 @@ public class Calculator2 {
 	}
 
 	public void concat(String...strs) {
-		// TODO Auto-generated method stub
 		for(String str : strs) {
 			System.out.print(str);
 		}
