@@ -22,4 +22,14 @@ public class App03 {
 	static final double PI = 3.14;
 	// static final의 변수명은 항상 대문자로 작성해주어야 한다. 그리고 단어 사이는 언더스코어'_'로 구분
 	static final int STUDENT_NUMBER = 30;
+	
+	void sum(String s, String...str) {
+        for(String a:str)
+            System.out.print(a+s);
+    }
+    void sum(String...str) {
+        for(String a:str)
+            System.out.print(a);
+    }
+
 }
