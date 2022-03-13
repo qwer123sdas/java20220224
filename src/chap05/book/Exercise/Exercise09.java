@@ -7,6 +7,7 @@ public class Exercise09 {
 		boolean run = true;
 		int studentNum = 0;
 		int[] scores = null;
+//		int[] scores = new int[studentNum];
 		Scanner scanner = new Scanner(System.in);
 		int selectNo =0;
 
@@ -25,12 +26,14 @@ public class Exercise09 {
 			if (selectNo == 1) {
 				System.out.print("학생수> ");
 				studentNum = scanner.nextInt();
-				scores = new int[studentNum]; // ★★★★★★★★★★★★★★★★ 
+				scores = new int[studentNum]; // ★★★★★★★★★★★★★★★★
+ 
 				
 
 			} else if (selectNo == 2) {
 				
 				for (int i = 0; i < studentNum; i++) {
+//					scores = new int[studentNum]; // ★★★★★★★★★★★★★★★★
 					System.out.print("scores[" + i + "]> ");
 					scores[i] = scanner.nextInt();
 					
