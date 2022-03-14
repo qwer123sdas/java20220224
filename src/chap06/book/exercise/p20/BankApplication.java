@@ -6,6 +6,7 @@ public class BankApplication {
 	// 생성자 호출 ? 없는데 왜 만들기 가능???
 	// Account객체를 100개 담을 수 있는 배열이니까 상관없음.!!!!!!!!!!!!!!
 	// 메인 메소드에서 사용할 수 있게 static 붙인것.
+	
 	private static Account[] accountArray = new Account[100];
 
 	// 스캐너 생성자 호출
@@ -138,7 +139,7 @@ public class BankApplication {
 			if (accountArray[i] != null) {
 				String accountNum = accountArray[i].getAno();
 				if (accountNum.equals(ano)) {
-					account = accountArray[i];
+					account = accountArray[i]; // accountArray[i]는 참조형 값을 가지고 있기 때문. 배열 만드는 부분 보면 앎.
 					break;
 				}else {
 					System.out.println("다시 입력해 주세요.");
