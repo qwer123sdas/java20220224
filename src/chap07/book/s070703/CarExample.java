@@ -10,7 +10,7 @@ public class CarExample {
 			
 			if(problemLocation != 0) {
 				System.out.println(car.tires[problemLocation-1].location + "한국타이어로 교체");
-//				car.tires[problemLocation -1] = new HankookTire(car.tires[problemLocation -1].location, 15);
+				car.tires[problemLocation -1] = new HankookTire(car.tires[problemLocation -1].location, 15);
 			}
 			
 	
