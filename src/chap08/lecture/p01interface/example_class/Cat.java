@@ -12,5 +12,9 @@ public class Cat extends Feline implements Pet{
 		System.out.println("고양이가 무시합니다.");
 	}
 	
+	@Override
+	public void sit() {
+		System.out.println("고양이가 도망갑니다.");
+	}
 
 }

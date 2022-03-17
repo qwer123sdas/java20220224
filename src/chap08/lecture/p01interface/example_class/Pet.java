@@ -7,5 +7,14 @@ public interface Pet {
 	void roll(); // public abstract void 메소드임.
 	
 	
+	// default method
+	default void sit() {
+		//인터페이스에 정의된 코드블럭이 있는 인슽ㄴ스 메소드
+		// 모두 public이다.
+		
+		System.out.println("반려동물이 앉습니다.");
+	}
+	
+	
 	
 }
