@@ -18,4 +18,13 @@ public interface RemoteControl {
 		System.out.println("건전지를 교환합니다.");
 	}
 	
+	// 디폴트 메소드
+	default void setMute(boolean mute) {
+		if(mute) {
+			System.out.println("무음 처리합니다.");
+		}else {
+			System.out.println("무음해제합니다.");
+		}
+	}
+	
 }
