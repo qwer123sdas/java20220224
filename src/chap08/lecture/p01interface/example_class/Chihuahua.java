@@ -7,4 +7,9 @@ public class Chihuahua extends Canine implements Pet{
 		System.out.println("멍멍");
 	}
 
+	@Override
+	public void roll() {
+		System.out.println("물어버립니다.");
+	}
+
 }
