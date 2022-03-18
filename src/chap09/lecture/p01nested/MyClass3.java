@@ -4,8 +4,13 @@ public class MyClass3 {
 	// static 멤버에서는 인스턴스 멤버에 접근 할 수 없다.
 	
 	
+	int field33 = 1;
+	
 	// static 중첩 클래스
 	static class NestedClass1{
+		void method(field3) {
+			
+		}
 		
 	}
 	
