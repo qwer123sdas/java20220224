@@ -8,9 +8,7 @@ public class MyClass3 {
 	
 	// static 중첩 클래스
 	static class NestedClass1{
-		void method(field3) {
-			
-		}
+		int a = filed33 +1;
 		
 	}
 	
