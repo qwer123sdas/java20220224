@@ -8,7 +8,21 @@ public class Car {
 	int maxSpeed = 350;
 	int speed;
 	
-	Car(){
+	public Car(){
+	}
+	//
+	private String model2;
+	
+	public String getModel2() {
+		return model2;
+	}
+
+	public void setModel2(String model2) {
+		this.model2 = model2;
+	}
+
+	public Car(String model2) {
+		this.model2 = model2;
 	}
 	
 }

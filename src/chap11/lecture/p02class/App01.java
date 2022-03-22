@@ -1,0 +1,32 @@
+package chap11.lecture.p02class;
+
+public class App01 {
+	public static void main(String[] args) throws Exception {
+		// 클래스 인스턴스를 얻는 3가지 방법
+		Class c1 = String.class; // class키워드 사용하는 방법.(.class는 필드가 아님 키워드임)
+		Class c2 = Class.forName("java.lang.String"); // forName메소드 사용.(exception 예외발생)
+
+		String s1 = "java";
+		Class c3 = s1.getClass(); // getClass 인스턴스 메소드 사용
+		
+		System.out.println(c1 == c2);
+		System.out.println(c2 == c3);
+		
+		// 클래스 정보를 갖고 있는 인스턴스 = c1;
+		//이를 통해 클래스의 이름을 얻는 다던가
+		System.out.println(c1.getName());
+		System.out.println(c1.getSimpleName());
+		
+		// 메소드 정보 얻기
+		System.out.println(c1.getMethods()); // 배열 출력
+		System.out.println("String 메소드 수 : " + c1.getMethods().length);
+		
+		// 필드 정보 얻기
+		System.out.println(c1.getFields());
+		System.out.println("String 필드 수 : "  +  c1.getFields().length);
+		
+		// 생성자 정보 얻기
+		System.out.println(c1.getConstructors());
+		System.out.println("String 생성자 수 : " + c1.getConstructors().length);
+	}
+}
