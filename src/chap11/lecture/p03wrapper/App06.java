@@ -9,8 +9,8 @@ public class App06 {
 		Integer i2 = Integer.valueOf(s1);  // auto unboxing이 아님.
 		
 		
-		int i3 = Integer.valueOf(s1); // auto unboxing
-		Integer i4 = Integer.parseInt(s1);// auto boxing 
+		int i3 = Integer.valueOf(s1); // 대문자 Integer클래스가 int 기본형으로 들어가서 auto unboxing
+		Integer i4 = Integer.parseInt(s1);// Inter.parseInt의 결과가 int기본형이므로 이게 Integer클래스의 참조형에 들어가므로 auto boxing 
 		
 	
 	}
