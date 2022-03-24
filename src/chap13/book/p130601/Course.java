@@ -19,8 +19,18 @@ public class Course<T> {
 	
 	public void add(T t) {
 		for(int i=0; i<students.length; i++) {
-			students[i] =t;
-			break;
+			if(students[i]==null) {
+				students[i] =t;
+				break;
+			}
 		}
+	}
+
+	public void add(Student student) {
+		
+	}
+
+	public Object[] getStrings() {
+		return null;
 	}
 }
