@@ -2,11 +2,12 @@ package chap13.book.p130201;
 
 public class BoxExample {
 	public static void main(String[] args) {
-		Box box = new Box();
+		Box<String> box = new Box<>();
 		box.set("홍길동");
-		String name = (String)box.get();
+		String name = box.get();
 		
-		box.set(new Apple);
-		Apple apple = (Apple)box.get();
+		Box<Integer> box2 = new Box<Integer>();
+		box2.set(3);
+		
 	}
 }

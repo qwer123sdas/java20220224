@@ -1,12 +1,12 @@
 package chap13.book.p130201;
 
-public class Box {
-	private Object object;
-	public void set(Object object) {
+public class Box<T> {
+	private T object;
+	public void set(T object) {
 		this.object = object;
 	}
 	
-	public Object get() {
+	public T get() {
 		return object;
 	}
 }
