@@ -34,6 +34,9 @@ public class LambdaExample {
 			}
 		});
 		
+
+		
+		
 		System.out.println("최대값 : " + min);
 	}
 	
