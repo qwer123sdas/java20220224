@@ -24,8 +24,8 @@ class MyArrayList{
 	
 	public void replaceAll(UnaryOperator<String> op) {
 		for(int i=0; i<values.length; i++) {
-//			values[i] = op.apply(values[i]);
-			values[i] = op.substring(0, values.length()/2);
+			values[i] = op.apply(values[i]);
+//			values[i] = op.substring(0, values.length()/2);
 		}
 	}
 }

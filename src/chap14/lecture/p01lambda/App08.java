@@ -1,6 +1,7 @@
 package chap14.lecture.p01lambda;
 
 import java.util.ArrayList;
+import java.util.function.Consumer;
 
 public class App08 {
 	public static void main(String[] args) {
@@ -14,6 +15,14 @@ public class App08 {
 		list1.add("friday");
 
 		list1.forEach(e -> System.out.println(e));
+		list1.forEach(new Consumer<String>() {
+			@Override
+			public void accept(String t) {
+				System.out.println(t);
+			}
+		});
+		
+		
 
 		// 절반의 문자열 출력
 		list1.forEach(e -> {

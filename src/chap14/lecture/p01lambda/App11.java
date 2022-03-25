@@ -20,18 +20,11 @@ public class App11 {
 //		list1.removeIf((e) -> false);
 //		System.out.println(list1.size()); // 5, 그대로 보존
 		
-//		list1.removeIf((e) -> e.startsWith("j"));
+		list1.removeIf((e) -> e.startsWith("j"));
 		
-		list1.removeIf( (e){
-			return e.startWith("j");
-		});
 		
-		list1.removeIf(a);
-		Predicate<String> a = new Predicate<String>() {
-			private void startWith() {
-				
-			}
-		}
+		
+
 		System.out.println(list1);
 		
 	}
