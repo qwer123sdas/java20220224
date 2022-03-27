@@ -19,3 +19,4 @@ public class Ex8_4 {
 		System.out.println(6);
 	}
 }
+
