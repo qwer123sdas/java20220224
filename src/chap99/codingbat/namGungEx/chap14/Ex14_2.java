@@ -17,6 +17,7 @@ public class Ex14_2 {
 		List<Integer> newList = doSomething(f, list);
 		System.out.println(newList);
 		
+		
 	}
 	
 //	Function<Integer, Integer> f = i -> i/10*10; // i의 일의 자리를 없앤다.
