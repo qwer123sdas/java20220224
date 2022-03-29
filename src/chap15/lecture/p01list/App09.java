@@ -42,15 +42,19 @@ public class App09 {
 
 
 
-		evenNum(p, list);
+		oddNum(p, list);
 		System.out.println(list);
 	}
 
-	static <T> void evenNum(Predicate<T> p, List<T> list) {
-		for (T i : list) {
-			if (p.test(i)) {
-				list.remove(i);
+	static <T> void oddNum(Predicate<T> p, List<T> list) {
+		Iterator<T> iterator = list.iterator();
+		while (iterator.hasNext()) {
+			T item = iterator.next();
+			
+			if (p.test(item)) {
+				iterator.remove();
 			}
+			
 		}
 	}
 }
