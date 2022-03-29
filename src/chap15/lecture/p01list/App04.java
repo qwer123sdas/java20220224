@@ -30,6 +30,7 @@ public class App04 {
 		// element 삭제
 //		list1.remove(index);
 		list1.remove(1);
+
 		System.out.println(list1);
 		System.out.println("바뀐get(1) : " + list1.get(1));
 	}
