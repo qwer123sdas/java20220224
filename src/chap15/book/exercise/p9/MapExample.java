@@ -12,7 +12,9 @@ public class MapExample {
 		String name = null;
 		int maxScore = 0;
 		int totalScore = 0;
-
+		
+		// 작성위치 
+		// 작성방법 1 : keySet
 		Set<String> keyset = map.keySet();
 		Iterator<String> keyIterator = keyset.iterator();
 		while (keyIterator.hasNext()) {
@@ -25,10 +27,21 @@ public class MapExample {
 				name = key;
 				maxScore = value;
 			}
+			
+			
 			// 점수 합계
 			totalScore += value;
 
 		}
+		
+		// 작성방법 2 : entrySet
+		for(Map.Entry<String, Integer> entry : map.entrySet()) {
+			System.out.println(entry);
+		}
+		
+		// 작성방법 3: map.forEach
+		map.forEach((k, v)-> System.out.println(k + "=" + v));;
+		
 		System.out.println("평균점수 : " + totalScore / map.size());
 		System.out.println("최고 점수 : " + maxScore);
 		System.out.println("최고점수 받은 아이디 : " + name);
