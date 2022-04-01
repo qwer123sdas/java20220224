@@ -16,7 +16,7 @@ public class App07 {
 			byte[] datas = new byte[100];
 			int len = 0;
 			while((len = is.read(datas)) != -1) {
-				os.write(len);
+				os.write(datas, 0, len);
 			}
 			
 		}catch(IOException e) {
