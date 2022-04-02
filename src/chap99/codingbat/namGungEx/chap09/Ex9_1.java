@@ -22,7 +22,7 @@ class Value{
 	
 	@Override
 	public boolean equals(Object obj) {
-		if(obj instanceof Value) {
+		if(! (obj instanceof Value)) {
 			Value val = (Value)obj;
 			if(this.value == val.value) {
 				return true;
