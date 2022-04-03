@@ -16,5 +16,6 @@ public class Ex9_16 {
 		Integer intg2 = new Integer(20);
 		int i3 = (int)intg2; // 참조형을 기본형으로 형변환 가능
 		
+		System.out.println(Math.PI);
 	}
 }
