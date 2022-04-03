@@ -42,7 +42,7 @@ public class Ex9_12 {
 		System.out.println();
 		System.out.println("capacity = " + sb.capacity());
 		System.out.println("length = " + sb.length());
-		
+
 		
 	}
 }
