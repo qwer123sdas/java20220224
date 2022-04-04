@@ -6,7 +6,7 @@ import java.io.Reader;
 
 public class App03 {
 	public static void main(String[] args) throws Exception{
-		String path = "src/chap18/lecture/p06filter/App03.java";
+		String path = "output/FilterExample51.txt";
 		normalReader(path);
 		
 		bufferedReader(path);
