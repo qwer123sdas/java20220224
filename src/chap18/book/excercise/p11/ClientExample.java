@@ -24,6 +24,8 @@ public class ClientExample {
 		fis.flush();
 		
 		
+		
+		
 		System.out.println("파일보내기 완료");
 		
 		fis.close();
