@@ -16,8 +16,9 @@ public class ServerExample {
 		try {
 			Socket socket = serverSocket.accept();
 			InputStream is = socket.getInputStream();
-
 			BufferedInputStream br = new BufferedInputStream(is);
+			
+			// 글씨 받기
 			byte[] bytes = new byte[1000];
 			int readByteCount = -1;
 
@@ -25,7 +26,17 @@ public class ServerExample {
 			if ((readByteCount = br.read(bytes)) != -1) {
 				name = new String(bytes, 0, readByteCount);
 			}
-			System.out.println(name);
+			System.out.println("[파일받기 시작] : " + name);
+			
+			
+			// 파일 받기
+			byte[] bytes2 = new byte[1000];
+			readByteCount = -1;
+			if((readByteCount = br.read(bytes))!= -1) {
+				
+			}
+			
+			
 
 			//				fileName = fileName.trim();
 			//				System.out.println("[파일받기 시작]" + fileName);

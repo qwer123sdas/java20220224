@@ -18,10 +18,11 @@ public class ClientExample {
 		System.out.println("[파일보내기 시작]" + fileName);
 		
 		//  
-		
 		BufferedOutputStream fis = new BufferedOutputStream(os);
 		fis.write(fileName.getBytes());
 		fis.flush();
+		
+		
 		
 		
 		
