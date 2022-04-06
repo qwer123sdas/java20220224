@@ -22,27 +22,31 @@ public class ServerExample {
 			byte[] bytes = new byte[1000];
 			int readByteCount = -1;
 
-			String name = "";
+			String fileName = "";
 			if ((readByteCount = br.read(bytes)) != -1) {
-				name = new String(bytes, 0, readByteCount);
+				fileName = new String(bytes, 0, readByteCount);
 			}
-			System.out.println("[파일받기 시작] : " + name);
+			fileName = fileName.trim();		
 			
 			
+			
+			System.out.println("[파일받기 시작] : " + fileName);
 			// 파일 받기
+			String path = "output/p11확인문제사진.jpg";  // 파일 데이터를 받고  이 폴더에 저장
+			OutputStream os = new FileOutputStream(path);
+			BufferedOutputStream bos = new BufferedOutputStream(os);
+			
+			
 			byte[] bytes2 = new byte[1000];
 			readByteCount = -1;
-			if((readByteCount = br.read(bytes))!= -1) {
-				
+			while((readByteCount = br.read(bytes))!= -1) {
+				bos.write(bytes2);
 			}
-			
-			
-
-			//				fileName = fileName.trim();
-			//				System.out.println("[파일받기 시작]" + fileName);
-
 			System.out.println("[파일받기완료]");
-
+			
+			bos.close();
+			os.close();
+			//
 			br.close();
 			is.close();
 			socket.close();
