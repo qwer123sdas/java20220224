@@ -1,4 +1,7 @@
 package chap99.codingbat.namGungEx;
+
+import java.util.Calendar;
+
 class Product{
 	static int count = 0; // 클래스 변수 생성 및 초기화(단순 초기화)
 	int serialNo;  // 인스턴스 변수 생성, 인스턴스 고유의 번호?
@@ -14,6 +17,7 @@ class Product{
 public class ProductTest {
 	
 	public static void main(String[] args) {
+		Calendar cal = Calendar.getInstance();
 		Product p1 = new Product();
 		Product p2 = new Product();
 		Product p3 = new Product();
