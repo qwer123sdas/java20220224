@@ -4,7 +4,7 @@ import java.text.DecimalFormat;
 
 public class Ex10_6 {
 	public static void main(String[] args) {
-		double number = 12389.0;
+		double number = 1234567.89;
 		String[] patterns= {				
 				"0",
 				"#",
