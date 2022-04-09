@@ -16,7 +16,7 @@ public class Ex11_4 {
 				 Scanner s = new Scanner(System.in);
 				 String input = s.nextLine().trim();
 				 
-				 if("".equals((intput)){
+				 if("".equals(input)){
 					 continue;
 				 }
 				 if(input.equalsIgnoreCase("q")) {
@@ -42,7 +42,19 @@ public class Ex11_4 {
 					 System.out.println(input); 
 				
 				 }
+			 }catch(Exception e) {
+				 System.out.println("입력오류입니다.");
 			 }
+			 
+		}
+	}
+
+	private static void save(String input) {
+		if(!"".equals(input)) {
+			q.add(input);
+		}
+		if(q.size()>MAX_SIZE) {
+			q.remove();
 		}
 	}
 }
