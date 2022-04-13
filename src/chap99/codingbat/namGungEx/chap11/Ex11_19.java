@@ -52,9 +52,9 @@ public class Ex11_19 {
 	 	replaceAll(list, 2, 1);
 	 	System.out.println("list : " + list);
 	 	
+	 	// Iterator와 같음.,
 	 	Enumeration e = enumeration(list);
 	 	ArrayList list2 = list(e);
-	 	
 	 	System.out.println("list2 : " + list2);
 	}
 }
