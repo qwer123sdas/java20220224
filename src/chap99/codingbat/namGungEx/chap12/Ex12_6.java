@@ -24,7 +24,7 @@ enum Direction2{
 	// of 메소드 : 상수들 중의 하나를 얻어 오기 위해 사용
 	public static Direction2 of(int dir) {
 		if(dir < 1 || dir > 4) {
-			// ????
+			// 0~3범위 벗어나면 예외 발생
 			throw new IllegalArgumentException("Invalid value : " + dir);
 		}
 		
@@ -33,8 +33,8 @@ enum Direction2{
 	
 	public Direction2 rotate(int num) {
 		num = num % 4;
-		if(num < 0) { num += 4; }
-		return DIR_ARR[(value - 1 + num) % 4];
+		if(num < 0) { num += 4; } // 음수일 땐 시계 반대 방향으로 회전
+		return DIR_ARR[(value - 1 + num) % 4]; 
 	}
 }
 
