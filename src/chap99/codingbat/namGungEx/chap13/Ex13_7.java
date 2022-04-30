@@ -10,10 +10,11 @@ public class Ex13_7 implements Runnable{
 		
 		for(int i = 0; i <= 10; i++) {
 			try {
-				Thread.sleep(1000);
+				Thread.sleep(1000);  // 1초
 			}catch(InterruptedException e) {
 				System.out.println(i);
-				if(i == 5) {
+				if(i == 5) {    // 5초부터 자동저장
+					      // 그전까지는 false이므로 자동저장되지 않는다.
 					autoSave = true;
 				}
 			}
