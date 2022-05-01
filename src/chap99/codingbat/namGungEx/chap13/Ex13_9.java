@@ -33,7 +33,7 @@ class ThreadEx9_1 extends Thread{
 		System.out.println("isInterrupted() ; " + this.isInterrupted()); // true
 		// isInterrupted와 달리 interrupted는 interrupted라는 상태변수를 false로 초기화 시키지 않음
 		
-		System.out.println("interrupted() : " + Thread.interrupted());  // true
+		System.out.println("interrupted() : " + Thread.interru pted());  // true
 		System.out.println("interrupted() : " + Thread.interrupted());  // false
 		
 		
