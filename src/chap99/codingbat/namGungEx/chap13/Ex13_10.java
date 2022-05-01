@@ -2,9 +2,9 @@ package chap99.codingbat.namGungEx.chap13;
 
 public class Ex13_10 {
 	public static void main(String[] args) {
-		MyThread th1 = new MyThread(r, "*");
-		MyThread th2 = new MyThread(r, "**");
-		MyThread th3 = new MyThread(r, "***");
+		MyThread th1 = new MyThread("*");
+		MyThread th2 = new MyThread("**");
+		MyThread th3 = new MyThread("***");
 		th1.start();
 		th2.start();
 		th3.start();
@@ -47,6 +47,9 @@ class MyThread implements Runnable{
 	
 	void stop() {
 		stopped = true;
+	}
+	void suspend() {
+		suspended = true;
 	}
 	
 	void resume() {
